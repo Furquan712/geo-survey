@@ -82,7 +82,7 @@ export default function AdminReportsPage() {
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Survey Data</h1>
         <button
-          onClick={() => signOut()}
+           onClick={() => signOut({ callbackUrl: "/auth/signin" })}
           className="bg-black px-4 py-2 rounded hover:bg-gray-800 transition"
         >
           Sign Out

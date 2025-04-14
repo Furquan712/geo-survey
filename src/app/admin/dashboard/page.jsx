@@ -22,7 +22,7 @@ export default function AdminDashboardPage() {
     <div className="min-h-screen bg-gray-900 text-white p-8">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold mb-4">Admin</h1>
-        <button onClick={() => signOut()} className="bg-black px-4 py-2 rounded">
+        <button  onClick={() => signOut({ callbackUrl: "/auth/signin" })} className="bg-black px-4 py-2 rounded">
           Sign Out
         </button>
       </div>

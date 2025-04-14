@@ -219,7 +219,7 @@ export default function AgentDashboardPage() {
     <div className="min-h-screen bg-gray-900 text-white p-8 relative">
       <h1 className="text-3xl font-bold mb-4">Agent Dashboard</h1>
       <button
-        onClick={() => signOut()}
+         onClick={() => signOut({ callbackUrl: "/auth/signin" })}
         className="bg-black px-4 py-2 rounded mb-8 hover:bg-gray-800 transition"
       >
         Sign Out
